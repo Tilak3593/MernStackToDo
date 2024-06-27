@@ -1,0 +1,133 @@
+/* addTask.css */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Add Task Container */
+
+.add-task-container {
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.add-task-container h1{
+  text-align: center;
+}
+/* Form Styles */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+input[type="text"], textarea {
+  width: 720px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  width: 720px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #5858ba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e428e;
+}
+.errors{
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .add-task-container {
+     max-width: 600px;
+     margin-left: 130px;
+   }
+   label{
+    max-width: 55%;
+     display: block;
+     margin-left: 200px;
+   }
+   input[type="text"], textarea, input[type="date"] {
+     max-width: 55%;
+     display: block;
+     margin-left: 200px;
+     font-size: 12px;
+   }
+   button[type="submit"] {
+     width: 70%;
+   }
+ }
+ 
+ @media only screen and (max-width: 480px) {
+  .add-task-container {
+     max-width: 400px;
+    
+   }
+   input[type="text"], textarea, input[type="date"] {
+    max-width: 20%;
+     display: block;
+     margin-left: 500px;
+   }
+   button[type="submit"] {
+     width: 30%;
+   }
+   label{
+    max-width: 20%;
+  
+     display: block;
+     margin-left: 500px;
+   }
+ }
+
+

@@ -1,0 +1,110 @@
+.task-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.task-detail h1 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+   
+}
+
+.task-detail p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.task-detail p:last-child {
+    margin-bottom: 0;
+}
+.title{
+    display: inline;
+    font-weight: normal;
+    font-size: 20px;
+}
+.task-detail .date{
+    color: red;
+    animation: blink 1s infinite;
+    margin-bottom: 10px !important;
+}
+.task-detail a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+
+.task-detail button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-detail button:hover {
+    background-color: #23527c;
+    border-radius: 10px
+}
+
+.task-detail button:active {
+    background-color: #1d4a7a;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Mobile-first approach */
+@media (min-width: 480px) {
+  .task-detail {
+     padding: 30px;
+   }
+  .task-detail h1 {
+     font-size: 24px;
+   }
+  .task-detail p {
+     margin-bottom: 30px;
+   }
+  .task-detail button {
+     padding: 15px 30px;
+   }
+ }
+ 
+ @media (min-width: 768px) {
+  .task-detail {
+     max-width: 900px;
+     padding: 40px;
+   }
+  .task-detail h1 {
+     font-size: 28px;
+   }
+  .task-detail p {
+     margin-bottom: 40px;
+   }
+  .task-detail button {
+     padding: 20px 40px;
+   }
+ }
+ 
+
+
+  
